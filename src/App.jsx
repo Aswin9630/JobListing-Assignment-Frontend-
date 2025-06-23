@@ -1,6 +1,6 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import Home from "./Pages/Home"
-import CreateJobForm from "./Pages/createJobForm"
+import CreateJobForm from "./Pages/CreateJobForm"
 
 function App() {
   
