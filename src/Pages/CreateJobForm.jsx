@@ -9,7 +9,7 @@ const CreateJobForm = ({onClose, onJobAdded}) => {
   const onSubmit = async (formData) => {
     try {
       
-      const response = await fetch(`${BACKEND_URL}/api/jobs/createJob`, {
+      const response = await fetch(`${BACKEND_URL}/jobs/createJob`, {
           method: "POST",
           headers:{
             "Content-Type":"application/json"

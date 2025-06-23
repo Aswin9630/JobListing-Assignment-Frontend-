@@ -38,7 +38,7 @@ const Home = () => {
 
   const fetchAllJobs = async () => {
     try {
-      const response = await fetch(`${BACKEND_URL}/api/jobs/view`);
+      const response = await fetch(`${BACKEND_URL}/jobs/view`);
       const data = await response.json();
       setJobData(data.jobs);
       setAllJobData(data.jobs);
