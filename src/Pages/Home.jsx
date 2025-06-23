@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import JobCard from "../components/JobCard";
 import { BACKEND_URL } from "../utils/constants";
-import JobFilter from "../components/jobFilter";
+import JobFilter from "../components/JobFilter";
 
 const Home = () => {
   const [jobData, setJobData] = useState([]);
