@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import CreateJobForm from '../Pages/createJobForm';
+import CreateJobForm from '../Pages/CreateJobForm';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 const Navbar = ({ onJobAdded }) => {
