@@ -69,6 +69,7 @@ const Home = () => {
               salaryMax={job.salaryMax}
               description={job.description}
               deadline={job.deadline}
+              id={job._id}
             />
           ))
         )}

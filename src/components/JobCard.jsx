@@ -2,6 +2,7 @@ import React from "react";
 import { FiUserPlus } from "react-icons/fi";
 import { PiBuildingOffice } from "react-icons/pi";
 import { BiLayer } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const logos = [
   "https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg",
@@ -9,7 +10,7 @@ const logos = [
   "https://static.vecteezy.com/system/resources/previews/020/336/484/non_2x/tesla-logo-tesla-icon-transparent-png-free-vector.jpg"
 
 ]
-const JobCard = ({ index, title, salaryMax, description }) => {
+const JobCard = ({ index, title, salaryMax, description, id }) => {
 
   const logo = logos[index % logos.length];
 
@@ -46,9 +47,9 @@ const JobCard = ({ index, title, salaryMax, description }) => {
 
       </div>
 
-      <button className="w-full bg-blue-400 font-medium text-white py-2 rounded-lg hover:bg-blue-600 transition cursor-pointer">
+      <Link to={`/jobs/view/${id}`}><button className="w-full bg-blue-400 font-medium text-white py-2 rounded-lg hover:bg-blue-600 transition cursor-pointer">
         Apply Now
-      </button>
+      </button></Link>
     </div>
   );
 };

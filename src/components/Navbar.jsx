@@ -11,8 +11,8 @@ const Navbar = ({ onJobAdded }) => {
     { name: 'Home', path: '/' },
     { name: 'Find Jobs', path: '/' },
     { name: 'Find Talents', path: '/' },
-    { name: 'About Us', path: '/' },
-    { name: 'Testimonials', path: '/' },
+    { name: 'About Us', path: '/aboutus' },
+    { name: 'Testimonials', path: '/testimonials' },
   ];
 
   return (
